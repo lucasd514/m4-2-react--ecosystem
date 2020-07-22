@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./header";
+import Homepage from "./homepage";
+import About from "./aboutUs";
 
 const App = (props) => {
   return (
@@ -8,10 +10,10 @@ const App = (props) => {
       <Header></Header>
       <Switch>
         <Route exact path="/">
-          Daje
+          <Homepage />
         </Route>
         <Route exact path="/about">
-          ROMA
+          <About />
         </Route>
       </Switch>
     </Router>

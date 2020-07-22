@@ -28,7 +28,7 @@ const Header = (props) => {
           <Link to="/">About us</Link>
         </LinkBox>
         <LinkBox>
-          <Link to="/about">Roma</Link>
+          <Link to="/about">Reggieloso</Link>
         </LinkBox>
       </Redirects>
     </Banner>
