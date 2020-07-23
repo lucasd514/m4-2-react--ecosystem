@@ -21,9 +21,12 @@ const ListingGrid = ({ itemList }) => {
     <Container>
       {itemList.map((fruits) => (
         <Fruit>
-          <Picture src={fruits.imageSrc} alt={fruits.name} />
-          <div>{fruits.name}</div>
-          <div>{fruits.latinName}</div>
+          <Link to={`items/${fruits.id}`}>
+            <Picture src={fruits.imageSrc} alt={fruits.name} />
+            <div>{fruits.name}</div>
+            <div>{fruits.latinName}</div>
+            <div>{fruits.id}</div>
+          </Link>
         </Fruit>
       ))}
     </Container>
