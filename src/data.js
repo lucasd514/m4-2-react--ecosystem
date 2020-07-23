@@ -6,7 +6,7 @@ export const sellers = {
     avatarSrc: "/assets/joeNacho.jpg",
   },
   bob: {
-    id: "little-vincent",
+    id: "little vincent",
     storeName: "JoJu incorporated",
     description: "likes cheese!",
     avatarSrc: "/assets/little-vincent.jpg",
