@@ -5,12 +5,10 @@ import { useParams } from "react-router-dom";
 import { items, sellers } from "../data";
 
 const Container = styled.div`
-  border: 3px solid black;
   display: flex;
 `;
 
 const Box = styled.div`
-  border: 2px red dashed;
   width: 50vw;
 `;
 
@@ -30,7 +28,6 @@ const Seller = styled.img`
 
 const Sellerbox = styled.div`
   display: flex;
-  border: 2px yellow dotted;
   padding-top: 10px;
   margin-top: 20px;
 `;
@@ -45,7 +42,7 @@ const ClickHere = styled.button`
 
   &&:hover {
     background-color: green;
-    transition-duration: 20ms;
+    transition-duration: 100ms;
   }
 `;
 const ItemDetails = () => {
