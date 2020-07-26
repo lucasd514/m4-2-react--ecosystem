@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Banner = styled.nav`
   display: flex;
@@ -25,10 +25,28 @@ const Header = (props) => {
       <h2>Marche Tania</h2>
       <Redirects>
         <LinkBox>
-          <Link to="/">About us</Link>
+          <NavLink
+            to="/"
+            exact
+            activeStyle={{
+              fontWeight: "bold",
+              color: "red",
+            }}
+          >
+            About us
+          </NavLink>
         </LinkBox>
         <LinkBox>
-          <Link to="/about">Reggieloso</Link>
+          <NavLink
+            to="/about"
+            exact
+            activeStyle={{
+              fontWeight: "bold",
+              color: "red",
+            }}
+          >
+            Reggieloso
+          </NavLink>
         </LinkBox>
       </Redirects>
     </Banner>
